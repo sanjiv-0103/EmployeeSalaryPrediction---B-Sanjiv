@@ -2,6 +2,8 @@ streamlit
 pandas
 numpy
 scikit-learn
-plotly
 joblib
 cloudpickle
+plotly
+matplotlib
+gdown
