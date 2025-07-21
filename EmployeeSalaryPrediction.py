@@ -1,15 +1,19 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import joblib
+import cloudpickle
 import plotly.express as px
 import plotly.graph_objects as go
 import io
 
-# Load model and encoders
-model = joblib.load("best_model.pkl")  # no need for .gz if your model is not compressed
-trained_columns = joblib.load("trained_columns.pkl")
-label_encoders = joblib.load("label_encoders.pkl")
+# Load model and encoders using cloudpickle
+def load_pickle(file_path):
+    with open(file_path, "rb") as f:
+        return cloudpickle.load(f)
+
+model = load_pickle("best_model.pkl")
+trained_columns = load_pickle("trained_columns.pkl")
+label_encoders = load_pickle("label_encoders.pkl")
 
 # USD to INR conversion rate
 USD_TO_INR = 83.5
