@@ -9,14 +9,17 @@ An AI-powered web application that predicts employee salaries based on job role,
 
 ## Features ✨ 
 
-- 🎯 Predict **Monthly** and **Annual Salary**
-- 📈 Display salary **growth trends over years of experience**
-- 📊 Interactive **line charts**, **scatter plots**, and **gauge meters**
-- 📁 Upload custom CSV datasets for predictions
-- 🧠 Auto-detect and match similar column names (e.g. `sex` = `gender`)
-- 📂 Built-in **admin dashboard** for resume matches and salary stats
-- 🧾 Editable **resume builder**
-- 🎯 Job recommendation engine based on skills in resume
+- 🎯 Predict Monthly and Annual Salary based on user inputs
+- 📊 Interactive Dashboard with individual and CSV-based predictions
+- 📈 Salary Growth Graph based on years of experience
+- 📁 Upload Your Dataset and get salary predictions in bulk
+- 🧠 Smart Label Encoding with pre-trained encoders for consistent results
+- 💼 Realistic Range Limiting to prevent extreme prediction outputs
+- 📥 Downloadable Reports in TXT or CSV format for offline access
+- 🌐 Responsive UI powered by Streamlit and Plotly
+- 🧪 Random Forest Model trained on demographic and professional attributes
+
+
 
 ---
 
