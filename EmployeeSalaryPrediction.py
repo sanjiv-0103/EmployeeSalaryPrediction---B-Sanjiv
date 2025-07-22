@@ -1,15 +1,16 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import cloudpickle
+import joblib
 import plotly.express as px
 import plotly.graph_objects as go
 import io
 
-# Load model and encoders using cloudpickle
-def load_pickle(file_path):
-    with open(file_path, "rb") as f:
-        return cloudpickle.load(f)
+# Load model and encoders using joblib
+joblib.dump(trained_model, "best_model.pkl")
+joblib.dump(trained_columns, "trained_columns.pkl")
+joblib.dump(label_encoders, "label_encoders.pkl")
+
 
 model = load_pickle("best_model.pkl")
 trained_columns = load_pickle("trained_columns.pkl")
