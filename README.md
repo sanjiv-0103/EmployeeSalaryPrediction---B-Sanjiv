@@ -75,10 +75,10 @@ cd EmployeeSalaryPrediction
 
 📦 3. Set Up a Virtual Environment (Recommended)
 
-# Create virtual environment
+### Create virtual environment
 python -m venv venv
 
-# Activate the virtual environment
+### Activate the virtual environment
 venv\Scripts\activate  (For Windows)
 
 📚 4. Install Dependencies
