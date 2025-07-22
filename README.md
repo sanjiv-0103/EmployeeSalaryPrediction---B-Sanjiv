@@ -39,7 +39,7 @@ An AI-powered web application that predicts employee salaries based on job role,
 
 ## 📂 Project Structure
 
-AICTE_IBM_Salary_Prediction/
+EmployeeSalaryPrediction/
 ├── EmployeeSalaryPrediction.py    # Streamlit app
 ├── best_model.pkl    # ML model
 ├── trained_columns.pkl   # List of columns used for training
